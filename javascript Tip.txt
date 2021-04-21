@@ -1,0 +1,8 @@
+    var _init = { cache   : Date.now(), path    : '/js/dist/'};
+    var _url = _init.path + 'lodash_min.js?v=' + _init.cache;
+
+    jQuery.ajax({
+        url: _url,
+        dataType: 'script',
+        async: true
+    });
